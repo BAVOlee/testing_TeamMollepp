@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    
+  <title>chunk_file</title>
+</head>
+<style>
+  body {
+    font-family: 'Recursive', sans-serif;
+    font-size: larger;
+  }
+
+  .icon {
+    width: auto;
+    height: auto ;
+  }
+  #icon {
+    width: 100px;
+    height: 100px;
+  }
+  .size {
+    width: 400px;
+    height: auto;
+  }
+  .size1 {
+    width: 200px;
+    height: 200px;
+  }
+  .box {
+    box-shadow: 3px 4px 0px 0px rgba(0, 0, 255,0.5);
+  }
+</style>
+
+<body>
+
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blue" style="background-color: rgba(0, 0, 255,0.5);">
+    <div class="container-fluid">
+      <a class="navbar-brand icon" href="#"><img src="/image/chunk_file logo 1 2.png" alt="" id="icon"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <% if(logged){ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+            <% }else{ %>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Signup</a>
+              </li>
+              <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+
+ 
+  <div class="row">
+    <div class="col-sm-4 mx-3" >
+          <img src="/image/split.png" class="rounded float-start size" alt="">
+     </div>
+    <div class="col-sm-6">
+      
+        <div class="card-body">
+          <h1 class="card-title">Split your data-files into Smaller Bits</h1>
+          <p class="card-text">   Upload, Split, Download or Save your data files for later.
+            <br />No Data limit, No Code, No Credit Card !!!</p>
+          <a href="/login" class="btn btn-primary">Get Started</a>
+        </div>
+      
+    </div>
+  </div>
+  
+  <div class="card text-center my-5">
+    <div class="card-header-xl text-primary">
+      Features
+    </div>
+    <div class="card-body">
+      
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body box">
+              <h3 class="card-title">Splitter</h3>
+              <p class="card-text">Split your CSV and JSON file</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body box">
+              <h3 class="card-title">Converter</h3>
+              <p class="card-text">Convert your CSV and JSON file.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body box">
+              <h3 class="card-title">Merger</h3>
+              <p class="card-text">Merge your CSV and JSON file</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mx-5">
+    <div class="col-sm-6">
+      
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">JSON</h5>
+          <p class="card-text text-center px-5">A JSON file is a file that stores simple data structures and objects in JavaScript Object Notation (JSON) format, which is a standard data interchange format. It is primarily used for transmitting data between a web application and a server.</p>
+          
+        </div>
+     
+    </div>
+    <div class="col-sm-6">
+      
+        <div class="card-body text-center py-5">
+          <img class="size1" src="/image/Group.png" alt="">
+        </div>
+     
+    </div>
+  </div>
+
+  <hr>
+  <div class="row mx-5">
+    <div class="col-sm-6">
+      
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">CSV</h5>
+          <p class="card-text text-center px-5"> A CSV file is a comma-separated value file commonly used by spreadsheet programs such as Microsoft Excel or OpenOffice Calc.</p>
+          
+        </div>
+     
+    </div>
+    <div class="col-sm-6">
+      
+        <div class="card-body text-center py-5">
+          <img class="size1" src="/image/Group.png" alt="">
+        </div>
+     
+    </div>
+  </div>
+
+  <h5 class="card-header text-center text-primary">How it Works</h5>
+  <div class="card-group">
+    
+    <div class="card">
+      <img src="/image/g1.png" class="card-img-top" alt="...">
+
+    </div>
+    <div class="card">
+      <img src="/image/g2.png" class="card-img-top" alt="...">
+
+    </div>
+    <div class="card">
+      <img src="/image/g3.png" class="card-img-top" alt="...">
+   
+    </div>
+    <div class="card">
+      <img src="/image/g4.png" class="card-img-top" alt="...">
+     
+    </div>
+  </div>
+
+  
+    
+  <img src="/image/Frame.png" class="img-fluid text-center my-5 px-5 " alt="Responsive image">
+
+
+<div class="row">
+  <div class="container my-5">
+
+    <footer class="bg-primary text-center text-lg-start text-white">
+  
+      <div class="container p-4">
+  
+        <div class="row my-4">
+  
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  
+            <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+              <img src="/image/chunk_file logo 1 2.png" height="70" alt=""
+                   loading="lazy" />
+            </div>
+  
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <img src="/image/github.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <img src="/image/instagram.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                 
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Products</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Apps Integration</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Tools</a>
+              </li>
+              
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Company</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Support</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Privacy and Policy</a>
+              </li>
+    
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Tools</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>Split CSV</p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i>Split JSON</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>Convert CSV</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>Convert JSON</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>Merge CSV</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>Convert JSON</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>Others</p>
+              </li>
+            </ul>
+          </div>
+         
+        </div>
+        
+      </div>
+     
+  
+     
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © @2022 ChunkFile. All rights reserved: TeamMolepp
+       
+      </div>
+     
+    </footer>
+  
+  </div>
+  
+</div>
+    
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
